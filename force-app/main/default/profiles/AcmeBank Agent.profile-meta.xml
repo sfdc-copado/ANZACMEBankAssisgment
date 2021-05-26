@@ -272,11 +272,6 @@
         <recordType>Account.Customer_Account</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
-    <recordTypeVisibilities>
-        <default>false</default>
-        <recordType>Account.Financial_Account</recordType>
-        <visible>false</visible>
-    </recordTypeVisibilities>
     <tabVisibilities>
         <tab>Transaction_History__c</tab>
         <visibility>Hidden</visibility>

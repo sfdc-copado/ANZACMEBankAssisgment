@@ -2,7 +2,7 @@
 private class ACM_TransactionWebServiceTest {
     @testSetup
     private static void setup(){
-        Id recordTypeIdFinance = Schema.SObjectType.Account.getRecordTypeInfosByName().get('Financial Account').getRecordTypeId();
+        Id recordTypeIdFinance = Schema.SObjectType.Finance_Account__c.getRecordTypeInfosByName().get('Finance Account').getRecordTypeId();
         List<Account> lstAccount = new  List<Account>();
         for(Integer i=0;i<2;i++) {
             lstAccount.add(new Account(Name = 'TestAcct'+i, recordTypeId=recordTypeIdFinance,accountNumber= '123'+i));

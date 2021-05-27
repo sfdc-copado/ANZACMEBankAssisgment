@@ -1,14 +1,14 @@
 
 # Part 1: Modelling
 
-## RecordType creation
-I have created two record types to Store customer Account and Financial account
+## Object creation
+I have created 1 new object as Financial Account its child object of Standard Account Object as Customer account can have multiple Finance Account.
 
-## Junction Object to relate both type accounts
-As in the second point it says All Customers can have Financial Accounts, So i have created on junction object Account relationsip to relate both type accounts.
+## Master-Detail relationship
+I have connected Financial Accouont & Customer Account as Master Detail relationship and Account standard object as Parent Object..
 
 ## Custom Object to store transaction history
-Also, to store transaction history, i have created a custom object to store all the transaction related information coming from the external system.
+Also, to store transaction history, i have created a custom object to store all the transaction related information coming from the external system.Trying to think abount create Big Object but on Big object Roll up summary field is not possible.
 
 ## Roll up summary field sum the amount from the child transaction records
 Created roll up summary field to sum the amount of child transaction records.
@@ -17,7 +17,7 @@ Created roll up summary field to sum the amount of child transaction records.
 # Part 2: Provisioning
 
 ## ABID generation
-Created auto number field with the formatting provided in the requirement doc.
+Created auto number field with the formatting provided in the requirement doc.I can create the Test field with 12 digit but via process builder counter was not possible. Hence as Best practise we need to use first configuration except Trigger. Else Customization trigger should be work.
 
 ## Pubish customer account detalils on creation
 Created a platform event object and process builder to publish it.
